@@ -1,0 +1,13 @@
+{
+  "name": "build-pipeline-probe",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Recon-only sandbox/build-pipeline probe for Railway Managed Bug Bounty (railway-mbb). Read-only checks, no destructive actions, no network scanning ranges.",
+  "scripts": {
+    "postinstall": "node recon.js build",
+    "start": "node recon.js runtime && node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
